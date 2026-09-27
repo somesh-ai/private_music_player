@@ -6,5 +6,5 @@ import react from "@vitejs/plugin-react";
 // If you're deploying to a *user/org* page (yourname.github.io repo), set base to "/".
 export default defineConfig({
   plugins: [react()],
-  base: "/my-music-site/",
+base: "/private_music_player/",
 });
