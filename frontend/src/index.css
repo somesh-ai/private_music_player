@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #15120f;
+  overscroll-behavior: none;
+}
+
+/* thin, warm-toned scrollbar for the library list */
+.lib-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.lib-scroll::-webkit-scrollbar-thumb {
+  background-color: #3a322b;
+  border-radius: 999px;
+}
+.lib-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* range input (scrubber + volume) styling shared by Player */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  border-radius: 999px;
+  background: #3a322b;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #e8b84b;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 999px;
+  background: #e8b84b;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid #e8b84b;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

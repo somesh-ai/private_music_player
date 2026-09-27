@@ -1,0 +1,18 @@
+node_modules/
+dist/
+scripts/venv/
+.DS_Store
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Python virtual environment
+frontend/Scripts/venv/
+frontend/Scripts/__pycache__/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
